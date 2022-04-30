@@ -10,8 +10,8 @@
 }
 
 .page {
-  width: 100%;
   margin: 0 auto;
+  max-width: 1280px;
   font-family: "Inter";
   color: #ffffff;
   background-color: #2a2c2f;
@@ -83,4 +83,19 @@
   margin-top: 42px;
   font-size: 16px;
   line-height: 1.6;
+}
+
+.gallery {
+  max-width: 1184px;
+  margin: 0 auto;
+  margin-top: 92px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  justify-content: end;
+  gap: 16px;
+}
+
+.gallery__item {
+  margin: 0;
 }
