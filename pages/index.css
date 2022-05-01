@@ -99,3 +99,80 @@
 .gallery__item {
   margin: 0;
 }
+
+.cities {
+  margin-top: 12px;
+  margin-left: 148px;
+  margin-right: 148px;
+}
+
+.cities__item {
+  margin-top: 80px;
+  display: grid;
+  grid-template-areas:
+    "cities__title cities__artist"
+    "cities__image cities__description"
+    "button_cities cities__description";
+  row-gap: 48px;
+  column-gap: 40px;
+}
+
+.cities__title {
+  margin: 0;
+  grid-area: cities__title;
+  font-size: 72px;
+  line-height: 1.05;
+}
+
+.cities__image {
+  grid-area: cities__image;
+}
+
+.cities__artist {
+  margin: 0;
+  grid-area: cities__artist;
+  align-self: flex-end;
+}
+
+.cities__artist-title {
+  grid-area: cities__artist-title;
+  font-size: 12px;
+  line-height: 1.21;
+}
+
+.cities__artist-name {
+  grid-area: cities__artist-name;
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+.cities__description {
+  grid-area: cities__description;
+  font-size: 18px;
+  line-height: 1.63;
+}
+
+.cities__description p:nth-last-child(1) {
+  margin-top: 25px;
+}
+
+.cities__link-button {
+  margin: 0;
+  grid-area: button_cities;
+  width: 355px;
+  height: 48px;
+}
+
+.button {
+  background-color: #0278fe;
+  color: white;
+  font-size: 18px;
+  line-height: 1.21px;
+  border: none;
+  border-radius: 4px;
+}
+
+.button_cities {
+  width: 355px;
+  height: 48px;
+}
