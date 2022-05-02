@@ -17,22 +17,27 @@
   background-color: #2a2c2f;
 }
 
-.logo {
-  margin: 40px auto;
-}
-
 .header {
   text-align: center;
 }
 
-.header__title {
+.logo {
+  margin: 40px auto;
+  text-align: center;
+}
+
+.lead {
+  text-align: center;
+}
+
+.lead__title {
   margin-top: 91px;
   font-weight: 900;
   font-size: 96px;
   line-height: 1.04;
 }
 
-.header__subtitle {
+.lead__subtitle {
   margin-top: 32px;
   font-style: normal;
   font-weight: 400;
@@ -42,7 +47,7 @@
 
 /*Resolver opacidade e filtro na imagem*/
 
-.header__image {
+.lead__image {
   margin-top: 64px;
   max-width: 100%;
   height: 100%;
@@ -85,7 +90,7 @@
   line-height: 1.6;
 }
 
-.gallery {
+.photo-grid {
   max-width: 1184px;
   margin: 0 auto;
   margin-top: 92px;
@@ -96,69 +101,69 @@
   gap: 16px;
 }
 
-.gallery__item {
+.photo-grid__item {
   margin: 0;
 }
 
-.cities {
+.places {
   margin-top: 12px;
   margin-left: 148px;
   margin-right: 148px;
 }
 
-.cities__item {
+.place {
   margin-top: 80px;
   display: grid;
   grid-template-areas:
-    "cities__title cities__artist"
-    "cities__image cities__description"
-    "button_cities cities__description";
+    "place__title place__artist"
+    "place__image place__description"
+    "button_place place__description";
   row-gap: 48px;
   column-gap: 40px;
 }
 
-.cities__title {
+.place__title {
   margin: 0;
-  grid-area: cities__title;
+  grid-area: place__title;
   font-size: 72px;
   line-height: 1.05;
 }
 
-.cities__image {
-  grid-area: cities__image;
+.place__image {
+  grid-area: place__image;
 }
 
-.cities__artist {
+.place__artist {
   margin: 0;
-  grid-area: cities__artist;
+  grid-area: place__artist;
   align-self: flex-end;
 }
 
-.cities__artist-title {
-  grid-area: cities__artist-title;
+.place__artist-title {
+  grid-area: place__artist-title;
   font-size: 12px;
   line-height: 1.21;
 }
 
-.cities__artist-name {
-  grid-area: cities__artist-name;
+.place__artist-name {
+  grid-area: place__artist-name;
   font-size: 18px;
   line-height: 1.22;
 }
 
-.cities__description {
-  grid-area: cities__description;
+.place__description {
+  grid-area: place__description;
   font-size: 18px;
   line-height: 1.63;
 }
 
-.cities__description p:nth-last-child(1) {
+.place__description p:nth-last-child(1) {
   margin-top: 25px;
 }
 
-.cities__link-button {
+.place__link-button {
   margin: 0;
-  grid-area: button_cities;
+  grid-area: button_place;
   width: 355px;
   height: 48px;
 }
@@ -170,9 +175,50 @@
   line-height: 1.21px;
   border: none;
   border-radius: 4px;
+  width: 100%;
+  height: 100%;
 }
 
-.button_cities {
-  width: 355px;
+.cover {
+  max-width: 1184px;
+  margin: 0 auto;
+  margin-top: 92px;
+}
+
+.cover__call {
+  background-image: linear-gradient(
+      rgba(42, 44, 47, 0.3),
+      rgba(42, 44, 47, 0.3)
+    ),
+    url("/images/__background.jpg");
+  background-position: cover;
+  width: 1184px;
+  height: 740px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+}
+
+.cover__title {
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 1.05;
+}
+
+.cover__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.22;
+  text-align: center;
+}
+
+.cover__link-button {
+  width: 191px;
   height: 48px;
+}
+
+.footer__copy {
+  text-align: center;
+  margin: 92px 0 24px 0;
 }
