@@ -179,6 +179,11 @@
   height: 100%;
 }
 
+.button:hover {
+  background-color: #0063d2;
+  cursor: pointer;
+}
+
 .cover {
   max-width: 1184px;
   margin: 0 auto;
@@ -192,12 +197,20 @@
     ),
     url("/images/__background.jpg");
   background-position: cover;
-  width: 1184px;
+  max-width: 1184px;
   height: 740px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 32px;
+}
+
+.cover__call:hover {
+  background-image: linear-gradient(
+      rgba(42, 44, 47, 0.8),
+      rgba(42, 44, 47, 0.8)
+    ),
+    url("/images/__background.jpg");
 }
 
 .cover__title {
