@@ -1,0 +1,6 @@
+.place__link-button {
+  margin: 0;
+  grid-area: button_place;
+  width: 355px;
+  height: 48px;
+}

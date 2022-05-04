@@ -1,0 +1,5 @@
+.place__artist {
+  margin: 0;
+  grid-area: place__artist;
+  align-self: flex-end;
+}

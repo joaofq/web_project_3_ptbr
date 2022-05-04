@@ -1,237 +1,150 @@
-/*VAMOS FAZER TUDO AQUI, DEPOIS VAMOS DIVIDINDO EM BLOCO CONFORME FORMOS FINALIZANDO A SEÇÕES*/
+/*
+
+1 - Arrumar classe e blocos de botão. Incluir botão específico para cada bloco sem utilizar classe comum. Trocar <BUTTON> para direto no <a> para facilitar fontes e tudo mais.
+
+2 - Arrumar responsividade / porcentagens etc.
+
+3 - Outros. 
+
+*/
 
 @import url(../blocks/vendor/normalize.css);
 @import url(../blocks/vendor/fonts/inter.css);
 
-* {
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
+@import url(../blocks/root/root.css);
+@import url(../blocks/page/page.css);
+
+@import url(../blocks/header/header.css);
+
+@import url(../blocks/logo/logo.css);
+
+@import url(../blocks/lead/lead.css);
+@import url(../blocks/lead/__title/lead__title.css);
+@import url(../blocks/lead/__subtitle/lead__subtitle.css);
+@import url(../blocks/lead/__image/lead__image.css);
+
+@import url(../blocks/intro/intro.css);
+@import url(../blocks/intro/__title/intro__title.css);
+@import url(../blocks/intro/__quote_text/intro__quote_text.css);
+@import url(../blocks/intro/__quote_text-author/intro__quote_text-author.css);
+@import url(../blocks/intro/__content/intro__content.css);
+@import url(../blocks/intro/__text/intro__text.css);
+
+@import url(../blocks/photo-grid/photo-grid.css);
+@import url(../blocks/photo-grid/__item/photo-grid__item.css);
+
+@import url(../blocks/places/places.css);
+
+@import url(../blocks/place/place.css);
+@import url(../blocks/place/__title/place__title.css);
+@import url(../blocks/place/__artist-title/place__artist-title.css);
+@import url(../blocks/place/__artist-name/place__artist-name.css);
+@import url(../blocks/place/__artist/place__artist.css);
+@import url(../blocks/place/__image/place__image.css);
+@import url(../blocks/place/__description/place__description.css);
+@import url(../blocks/place/__link-button/place__link-button.css);
+
+@import url(../blocks/button/button.css);
+
+@import url(../blocks/cover/cover.css);
+@import url(../blocks/cover/__call/cover__call.css);
+@import url(../blocks/cover/__title/cover__title.css);
+@import url(../blocks/cover/__text/cover__text.css);
+@import url(../blocks/cover/__link-button/cover__link-button.css);
+
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__copy/footer__copy.css);
+
+@media screen and (min-width: 656px) and (max-width: 1024px) {
+  .intro {
+    margin: 91px 0 auto;
+  }
+
+  .photo-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .places {
+    min-width: 85%;
+    margin: 0 auto;
+  }
+
+  .place__title {
+    margin: 0;
+    grid-area: place__title;
+    font-size: 42px;
+    line-height: 1.09;
+  }
+  .place__description {
+    grid-area: place__description;
+    font-size: 16px;
+    line-height: 1.63;
+  }
 }
 
-.page {
-  margin: 0 auto;
-  max-width: 1280px;
-  font-family: "Inter";
-  color: #ffffff;
-  background-color: #2a2c2f;
-}
+@media screen and (max-width: 656px) {
+  .lead__title {
+    font-size: 40px;
+    line-height: 1.1;
+  }
 
-.header {
-  text-align: center;
-}
+  .lead__subtitle {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 
-.logo {
-  margin: 40px auto;
-  text-align: center;
-}
+  .intro__title {
+    font-size: 32px;
+    line-height: 1.09;
+  }
 
-.lead {
-  text-align: center;
-}
+  .intro__quote_text {
+    font-size: 24px;
+    line-height: 1.25;
+  }
 
-.lead__title {
-  margin-top: 91px;
-  font-weight: 900;
-  font-size: 96px;
-  line-height: 1.04;
-}
+  .photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .intro {
+    margin: 0;
+  }
 
-.lead__subtitle {
-  margin-top: 32px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 1.2;
-}
+  .place {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 
-/*Resolver opacidade e filtro na imagem*/
+  .place__title {
+    font-size: 32px;
+    line-height: 1.09;
+  }
 
-.lead__image {
-  margin-top: 64px;
-  max-width: 100%;
-  height: 100%;
-  filter: grayscale(100%);
-}
+  .place__link-button {
+    display: block;
+    order: 99;
+    width: 288px;
+  }
+  .button {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+  }
 
-.intro {
-  margin-top: 91px;
-  margin-left: 148px;
-  margin-right: 115px;
-}
+  .cover__title {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 1.09;
+  }
+  .cover__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+  }
 
-.intro__title {
-  font-size: 54px;
-  font-weight: 900;
-  line-height: 1.07;
-}
-
-.intro__content {
-  margin-left: 0;
-  margin-top: 40px;
-  max-width: 720px;
-}
-
-.intro__quote_text {
-  margin: 0;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1.4;
-  position: relative;
-}
-.intro__quote_text-author {
-  position: absolute;
-  bottom: -10px;
-  right: -2px;
-}
-.intro__text {
-  margin-top: 42px;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.photo-grid {
-  max-width: 1184px;
-  margin: 0 auto;
-  margin-top: 92px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 1fr;
-  justify-content: end;
-  gap: 16px;
-}
-
-.photo-grid__item {
-  margin: 0;
-}
-
-.places {
-  margin-top: 12px;
-  margin-left: 148px;
-  margin-right: 148px;
-}
-
-.place {
-  margin-top: 80px;
-  display: grid;
-  grid-template-areas:
-    "place__title place__artist"
-    "place__image place__description"
-    "button_place place__description";
-  row-gap: 48px;
-  column-gap: 40px;
-}
-
-.place__title {
-  margin: 0;
-  grid-area: place__title;
-  font-size: 72px;
-  line-height: 1.05;
-}
-
-.place__image {
-  grid-area: place__image;
-}
-
-.place__artist {
-  margin: 0;
-  grid-area: place__artist;
-  align-self: flex-end;
-}
-
-.place__artist-title {
-  grid-area: place__artist-title;
-  font-size: 12px;
-  line-height: 1.21;
-}
-
-.place__artist-name {
-  grid-area: place__artist-name;
-  font-size: 18px;
-  line-height: 1.22;
-}
-
-.place__description {
-  grid-area: place__description;
-  font-size: 18px;
-  line-height: 1.63;
-}
-
-.place__description p:nth-last-child(1) {
-  margin-top: 25px;
-}
-
-.place__link-button {
-  margin: 0;
-  grid-area: button_place;
-  width: 355px;
-  height: 48px;
-}
-
-.button {
-  background-color: #0278fe;
-  color: white;
-  font-size: 18px;
-  line-height: 1.21px;
-  border: none;
-  border-radius: 4px;
-  width: 100%;
-  height: 100%;
-}
-
-.button:hover {
-  background-color: #0063d2;
-  cursor: pointer;
-}
-
-.cover {
-  max-width: 1184px;
-  margin: 0 auto;
-  margin-top: 92px;
-}
-
-.cover__call {
-  background-image: linear-gradient(
-      rgba(42, 44, 47, 0.3),
-      rgba(42, 44, 47, 0.3)
-    ),
-    url("/images/__background.jpg");
-  background-position: cover;
-  max-width: 1184px;
-  height: 740px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 32px;
-}
-
-.cover__call:hover {
-  background-image: linear-gradient(
-      rgba(42, 44, 47, 0.8),
-      rgba(42, 44, 47, 0.8)
-    ),
-    url("/images/__background.jpg");
-}
-
-.cover__title {
-  font-size: 72px;
-  font-weight: 900;
-  line-height: 1.05;
-}
-
-.cover__text {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.22;
-  text-align: center;
-}
-
-.cover__link-button {
-  width: 191px;
-  height: 48px;
-}
-
-.footer__copy {
-  text-align: center;
-  margin: 92px 0 24px 0;
+  .cover__link-button {
+    width: 191px;
+    height: 48px;
+  }
 }

@@ -1,0 +1,9 @@
+.place__description {
+  grid-area: place__description;
+  font-size: 18px;
+  line-height: 1.63;
+}
+
+.place__description p:nth-last-child(1) {
+  margin-top: 25px;
+}
