@@ -1,4 +1,23 @@
-.cover__link-button {
+.cover__button {
+  margin: 0 auto;
   width: 191px;
   height: 48px;
+  background-color: #0278fe;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.22;
+  padding: 13px 20px;
+}
+.cover__button a {
+  color: white;
+  text-decoration: none;
+
+}
+
+.cover__button:hover {
+  background-color: #0063d2;
+  cursor: pointer;
+}
 }
