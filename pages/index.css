@@ -53,17 +53,24 @@
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__copy/footer__copy.css);
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 970px) {
+  .lead {
+    width: 100%;
+  }
   .intro {
-    margin: 91px 0 auto;
+    width: 95%;
   }
 
   .photo-grid {
     grid-template-columns: 1fr 1fr;
+    width: 93.7%;
   }
   .places {
-    min-width: 85%;
-    margin: 0 auto;
+    min-width: 95%;
+  }
+
+  .cover {
+    width: 100%;
   }
 
   .place__title {
@@ -79,7 +86,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .lead__title {
     font-size: 40px;
     line-height: 1.1;
@@ -104,30 +111,32 @@
     display: flex;
     flex-wrap: wrap;
   }
-  .intro {
-    margin: 0;
-  }
 
   .place {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    gap: 30px;
   }
-
   .place__title {
     font-size: 32px;
     line-height: 1.09;
   }
 
-  .place__link-button {
+  .place__button {
     display: block;
-    order: 99;
+    order: 9;
     width: 288px;
   }
   .place__button {
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
+  }
+
+  .cover__call {
+    margin-top: 64px;
+    height: 254px;
   }
 
   .cover__title {
@@ -141,7 +150,7 @@
     line-height: 1.14;
   }
 
-  .cover__link-button {
+  .cover__button {
     width: 191px;
     height: 48px;
   }

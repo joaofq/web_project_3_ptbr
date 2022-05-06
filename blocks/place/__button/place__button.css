@@ -1,6 +1,6 @@
 .place__button {
   margin: 0;
-  grid-area: button_place;
+  grid-area: place__button;
   width: 355px;
   height: 48px;
   background-color: #0278fe;

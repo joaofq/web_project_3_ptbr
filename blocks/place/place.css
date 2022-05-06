@@ -1,13 +1,12 @@
 .place {
   margin-top: 80px;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 46% 54%;
   grid-template-areas:
     "place__title place__artist"
     "place__image place__description"
-    "button_place place__description"
-    ". place__description";
-  row-gap: 48px;
-  column-gap: 40px;
-  border: 1px solid red;
+    "place__button place__description"
+    "auto auto";
+  row-gap: 5%;
+  column-gap: 4%;
 }

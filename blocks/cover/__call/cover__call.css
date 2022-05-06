@@ -4,8 +4,9 @@
       rgba(42, 44, 47, 0.3)
     ),
     url("/images/__background.jpg");
-  background-position: cover;
-  max-width: 1184px;
+  background-size: cover;
+  background-position: center;
+  width: 92%;
   height: 740px;
   display: flex;
   flex-direction: column;
