@@ -2,10 +2,9 @@
   grid-area: place__description;
   font-size: 18px;
   line-height: 1.63;
-}
-
-.place__description p:nth-last-child(1) {
-  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 @media screen and (max-width: 970px) {
@@ -13,5 +12,11 @@
     grid-area: place__description;
     font-size: 16px;
     line-height: 1.63;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .place__description {
+    padding: 0 18px;
   }
 }
