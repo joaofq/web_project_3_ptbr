@@ -31,5 +31,6 @@
 @media screen and (max-width: 767px) {
   .cover__call {
     height: 254px;
+    gap: 16px;
   }
 }
