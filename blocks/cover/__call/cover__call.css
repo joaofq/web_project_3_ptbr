@@ -3,7 +3,7 @@
       rgba(42, 44, 47, 0.3),
       rgba(42, 44, 47, 0.3)
     ),
-    url("../../../images/__background.jpg");
+    url("../../../images/cover_background.jpg");
   background-size: cover;
   background-position: center;
   width: 92%;
@@ -18,7 +18,7 @@
       rgba(42, 44, 47, 0.8),
       rgba(42, 44, 47, 0.8)
     ),
-    url("../../../images/__background.jpg");
+    url("../../../images/cover_background.jpg");
 }
 
 @media screen and (max-width: 970px) {
