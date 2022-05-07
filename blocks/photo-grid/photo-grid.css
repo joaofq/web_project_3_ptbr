@@ -13,6 +13,7 @@
   .photo-grid {
     grid-template-columns: 1fr 1fr;
     width: 93.7%;
+    margin-top: 64px;
   }
 }
 
@@ -20,5 +21,6 @@
   .photo-grid {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 38px;
   }
 }

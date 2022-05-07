@@ -6,8 +6,15 @@
   line-height: 1.2;
 }
 
+@media screen and (max-width: 970px) {
+  .lead__subtitle {
+    margin-top: 99px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .lead__subtitle {
+    margin-top: 60px;
     font-size: 16px;
     line-height: 1.25;
   }
