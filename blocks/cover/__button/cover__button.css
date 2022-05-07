@@ -13,11 +13,9 @@
 .cover__button a {
   color: white;
   text-decoration: none;
-
 }
 
 .cover__button:hover {
   background-color: #0063d2;
   cursor: pointer;
-}
 }

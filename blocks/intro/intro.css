@@ -2,3 +2,9 @@
   margin-top: 92px;
   width: 77%;
 }
+
+@media screen and (max-width: 970px) {
+  .intro {
+    width: 95%;
+  }
+}

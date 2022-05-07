@@ -20,3 +20,9 @@
     ),
     url("../../../images/__background.jpg");
 }
+
+@media screen and (max-width: 768px) {
+  .cover__call {
+    height: 254px;
+  }
+}

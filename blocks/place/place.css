@@ -10,3 +10,12 @@
   row-gap: 5%;
   column-gap: 4%;
 }
+
+@media screen and (max-width: 768px) {
+  .place {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+  }
+}

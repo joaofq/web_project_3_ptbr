@@ -8,3 +8,17 @@
   justify-content: end;
   gap: 16px;
 }
+
+@media screen and (max-width: 970px) {
+  .photo-grid {
+    grid-template-columns: 1fr 1fr;
+    width: 93.7%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

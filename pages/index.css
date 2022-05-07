@@ -1,13 +1,3 @@
-/*
-
-1 - Arrumar classe e blocos de botão. Incluir botão específico para cada bloco sem utilizar classe comum. Trocar <BUTTON> para direto no <a> para facilitar fontes e tudo mais.
-
-2 - Arrumar responsividade / porcentagens etc.
-
-3 - Outros. 
-
-*/
-
 @import url(../blocks/vendor/normalize.css);
 @import url(../blocks/vendor/fonts/inter.css);
 
