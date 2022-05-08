@@ -7,7 +7,7 @@
     "place__image place__description"
     "place__button place__description"
     ". place__description";
-  gap: 48px 25px;
+  gap: 48px 40px;
 }
 
 .place:first-of-type {
