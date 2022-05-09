@@ -1,5 +1,7 @@
 .cover__text {
-  font-size: 18px;
+  font-size: 18px; /* Consta na descrição:
+  "Não complique muito as coisas para você aqui. Defina tamanhos de fonte em pixels. Salve seu conhecimento de em e rem para entrevistas de emprego em empresas com diretrizes rígidas de programação."
+  */
   font-weight: 400;
   line-height: 1.22;
   text-align: center;

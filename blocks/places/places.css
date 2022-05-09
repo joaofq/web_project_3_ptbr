@@ -1,18 +1,18 @@
 .places {
   margin-top: 92px;
-  width: 80%;
+  width: 80%; /* Rechequei e aqui está funcionando.Lembrando que .places engloba os blocos .place,  */
 }
 
 @media screen and (max-width: 970px) {
   .places {
     min-width: 95%;
-    margin-top: 88px;
+    margin-top: 88px; /*Aqui está sendo aplicado. Lembrando que estamos falando da margem de separação do bloco places para o photo-grid*/
   }
 }
 
 @media screen and (max-width: 767px) {
   .places {
     min-width: 100%;
-    margin-top: 62px;
+    margin-top: 62px; /*Aqui está funcionando*/
   }
 }
