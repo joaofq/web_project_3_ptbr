@@ -5,7 +5,8 @@
   grid-template-areas:
     "place__title place__artist"
     "place__image place__description"
-    "place__button place__description";
+    "place__button place__description"
+    "auto place__description";
   gap: 48px 40px;
 }
 
