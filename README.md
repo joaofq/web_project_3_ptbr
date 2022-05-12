@@ -7,7 +7,7 @@ Este é um projeto de uma página, elaborado durante o curso de desenvolvimento 
 **Tecnologias Utilizadas**
 
 - Método BEM de organização de arquivos
-- HTML
+- HTML responsivo com tags semânticas
 - CSS com layout responsivo
   -- css grid layout
   -- flex-box
