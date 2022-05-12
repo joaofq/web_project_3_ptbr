@@ -23,9 +23,13 @@
 
 @media screen and (max-width: 767px) {
   .place {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "place__title"
+      "place__artist"
+      "place__image"
+      "place__description"
+      "place__button";
     gap: 30px;
     margin-top: 50px;
   }
