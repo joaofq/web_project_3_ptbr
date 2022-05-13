@@ -10,7 +10,7 @@
   gap: 48px 40px;
 }
 
-/* Removi o margin-top de 80px do primeiro elemento, para não somar com a margim do bloco anterior. O espaçamento fixado no gap não está influenciando nas margins. */
+/* Removi o margin-top de 80px do primeiro elemento, para não somar com a margim do bloco anterior. O espaçamento fixado no gap não está influenciando nas margins dos outros elementos. */
 .place:first-of-type {
   margin-top: 0;
 }
