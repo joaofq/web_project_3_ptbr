@@ -10,7 +10,6 @@
   gap: 48px 40px;
 }
 
-/* Removi o margin-top de 80px do primeiro elemento, para não somar com a margim do bloco anterior. O espaçamento fixado no gap não está influenciando nas margins dos outros elementos. */
 .place:first-of-type {
   margin-top: 0;
 }
@@ -35,12 +34,3 @@
     margin-top: 50px;
   }
 }
-/* Reorganizei o grid para a posição correta dos elementos. 
-Rechequei espaçamento no brief e consta o seguinte:
-
-[__url-heading(artist-title) e __artist-name]: está menor que 10px.
-
-[Último parágrafo de texto e botão]: O espaçamento no brief está aleatório para cada bloco de cidade. Mantive 30px para manter o padrão da maioria dos blocos.
-
-[Entre __artist e imagem]: Padrão é 30px.
-*/
